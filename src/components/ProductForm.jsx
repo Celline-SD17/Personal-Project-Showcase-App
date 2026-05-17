@@ -36,11 +36,17 @@ function ProductForm({ onAdd, editingProduct, onUpdate }) {
   }
   return(
   <form onSubmit= {handleSubmit}>
+    <label>Product Name: </label>
     <input name="name" placeholder="Name" value={formData.name} onChange={handleChange}/>
+    <label>Brand:  </label>
     <input name="brand" placeholder="Brand" value={formData.brand} onChange={handleChange}/>
+    <label>Category: </label>
     <input name="category" placeholder="Category" value={formData.category} onChange={handleChange}/>
+    <label>Price: </label>
     <input name="price" placeholder="Price" value={formData.price} onChange={handleChange}/>
+    <label>Image URL: </label>
     <input name="image" placeholder="Image URL" value={formData.image} onChange={handleChange}/>
+    <label>Description: </label>
     <textarea name="description" placeholder="Description" value={formData.description}onChange={handleChange}/>
     <button>
       {editingProduct ? "Update" : "Add Product"}

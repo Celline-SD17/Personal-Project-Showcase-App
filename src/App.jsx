@@ -21,13 +21,17 @@ function App() {
     return (
     <>
       <Navbar cartCount={cart.length} />
-      <Routes>
+      <div className="page-container">
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={ 
-            <Products addToCart={addToCart} message={message}/>} />
+            <Products addToCart={addToCart} message/>} />
         <Route path="/admin" element={<Admin />} />
 
       </Routes>
+
+      </div>
+      
     </>
   );
 }

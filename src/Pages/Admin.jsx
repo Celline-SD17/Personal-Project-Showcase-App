@@ -72,7 +72,7 @@ function Admin(){
         <div>
             <h1>Admin Portal</h1>
             <ProductForm onAdd={addProduct} editingProduct={editingProduct} onUpdate={updateProduct}/>
-            <button onClick={()=> setShowProducts(!showProducts)}>{showProducts? "HideProducts" : "Edit or Delete Products"}</button>
+            <button onClick={()=> setShowProducts(!showProducts)}>{showProducts? "HideProducts" : "Edit or Delete Product"}</button>
             {showProducts && (
             <ProductList products={products} onDelete={deleteProduct} onEdit={handleEdit}/>
             )}
