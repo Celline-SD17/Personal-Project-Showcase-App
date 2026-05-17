@@ -59,17 +59,18 @@
       "image": "https://thumbs.dreamstime.com/z/converse-chuck-taylor-all-star-brown-high-top-sneakers-wooden-step-outdoors-443502489.jpg?ct=jpeg",
       "description": "Classic canvas sneaker loved across generations.",
       "stock": 20
-    },
+    }, 
     {
+      "id": "7",
       "name": "J4",
       "brand": "JORDANS",
-      "category": "LIFESTYLE",
-      "price": "4000",
+      "category": "Lifestyle",
+      "price":  3000,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyu2_aK2EO810dS16xZ8TimypvNE3kYxMHtw&s",
-      "description": "LADIES SHOES",
-      "stock": "",
-      "id": "SU3VQ_COYhQ"
+      "description": "Legendary basketball snicker feauturing high quality leather and premium design.",
+      "stock": 15
     }
+
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }
