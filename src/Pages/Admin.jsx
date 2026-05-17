@@ -94,7 +94,7 @@ return(
 <div>
     <h1>Admin Portal</h1>
     <ProductForm onAdd={addProduct} editingProduct={editingProduct} onUpdate={updateProduct}/>
-    <button onClick={()=> setShowProducts(!showProducts)}>{showProducts? "HideProducts" : "Manage Products"}</button>
+    <button onClick={()=> setShowProducts(!showProducts)}>{showProducts? "HideProducts" : "Edit or Delete Products"}</button>
     {showProducts && (
         <ProductList products={products} onDelete={deleteProduct} onEdit={handleEdit}/>
     )}
