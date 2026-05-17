@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
+import "./Navbar.css"; 
 
 function Navbar({ cartCount }) {
   return (
     <nav>
 
-      <h2>SneakerHub</h2>
+      <h1>SneakerHub</h1>
 
-      <div>
+      <div className="nav-links">
 
         <NavLink to="/"> Home </NavLink>
         <NavLink to="/products"> Shop </NavLink>

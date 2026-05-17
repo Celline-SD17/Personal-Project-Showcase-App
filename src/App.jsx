@@ -25,7 +25,7 @@ function App() {
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={ 
-            <Products addToCart={addToCart} message/>} />
+            <Products addToCart={addToCart} message={message}/>} />
         <Route path="/admin" element={<Admin />} />
 
       </Routes>
