@@ -1,5 +1,6 @@
 {
-  "products": [
+  "products": 
+  [
     {
       "id": "1",
       "name": "Nike Air Force 1",
@@ -63,7 +64,7 @@
     {
       "id": "7",
       "name": "J4",
-      "brand": "JORDANS",
+      "brand": "Jordans",
       "category": "Lifestyle",
       "price":  3000,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyu2_aK2EO810dS16xZ8TimypvNE3kYxMHtw&s",
