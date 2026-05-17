@@ -9,35 +9,23 @@ import Admin from "./Pages/Admin";
 
 function App() {
   const [cart, setCart] = useState([]);
+  const [message, setMessage] =useState("");
 
-  function addToCart(product) {
-    setCart([...cart, product]);
-  }
 
-  return (
+    function addToCart(product) {
+        setMessage(`${product.name} was added to your cart!`);
+        setTimeout(() => {setMessage(""); 
+        }, 2000);
+        setCart([...cart, product]);
+    }
+    return (
     <>
       <Navbar cartCount={cart.length} />
-
       <Routes>
-
-        <Route
-          path="/"
-          element={<Home />}
-        />
-
-        <Route
-          path="/products"
-          element={
-            <Products
-              addToCart={addToCart}
-            />
-          }
-        />
-
-        <Route
-          path="/admin"
-          element={<Admin />}
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={ 
+            <Products addToCart={addToCart} message={message}/>} />
+        <Route path="/admin" element={<Admin />} />
 
       </Routes>
     </>

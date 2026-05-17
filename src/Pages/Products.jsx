@@ -1,37 +1,30 @@
 import { useEffect, useState } from "react";
 
-import ProductList from
-"../components/ProductList";
+import ProductList from "../components/ProductList";
 
-import SearchBar from
-"../components/SearchBar";
+import SearchBar from "../components/SearchBar";
 
-function Products({ addToCart }) {
-
-  const [products,setProducts] =
-  useState([]);
-
-  const [searchTerm,setSearchTerm] =
-  useState("");
-
-  useEffect(()=>{
-
-    fetch(
-      "http://localhost:3001/products"
-    )
-    .then(r=>r.json())
-    .then(data=>
-      setProducts(data)
-    )
-
-  },[])
-
-  const filteredProducts =
-  products.filter((product)=>
-
-     product.name
-     .toLowerCase()
-     .includes(
+function Products({ addToCart, message}) {
+  const [products,setProducts] = useState([]);
+  const [searchTerm,setSearchTerm] = useState("");
+//Fetching Products
+    useEffect(()=>{
+        fetch("http://localhost:3001/products")
+        .then(response => {
+         if(!response.ok){
+            throw new Error("Unable to fetch products!");
+         }
+        return response.json();
+     })
+        .then(data=> {setProducts(data);
+        })
+         .catch((error) => {
+        console.log(error);
+        });
+    },[])
+//Filtering Products for search functionality
+  const filteredProducts = products.filter((product)=>
+    product.name.toLowerCase() .includes(
        searchTerm.toLowerCase()
      )
 
@@ -40,19 +33,10 @@ function Products({ addToCart }) {
   return(
 
     <div>
-
       <h1>Shop</h1>
-
-      <SearchBar
-       searchTerm={searchTerm}
-       setSearchTerm={setSearchTerm}
-      />
-
-      <ProductList
-       products={filteredProducts}
-       onAddToCart={addToCart}
-      />
-
+      {message && (<p>{message}</p>)}
+      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <ProductList products={filteredProducts} onAddToCart={addToCart} />
     </div>
 
   )

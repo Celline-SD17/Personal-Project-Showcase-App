@@ -8,21 +8,9 @@ function Navbar({ cartCount }) {
 
       <div>
 
-        <NavLink to="/">
-          Home
-        </NavLink>
-
-        <NavLink to="/products">
-          Shop
-        </NavLink>
-
-        <NavLink to="/admin">
-          Admin
-        </NavLink>
-
-        <span>
-          Cart: {cartCount}
-        </span>
+        <NavLink to="/"> Home </NavLink>
+        <NavLink to="/products"> Shop </NavLink>
+        <NavLink to="/admin">Admin </NavLink>
 
       </div>
 
