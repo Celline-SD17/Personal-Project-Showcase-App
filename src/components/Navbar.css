@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 30px;
+  background: black;
+  color: white;
+}
+
+nav h1 {
+    margin-bottom: 10px; 
+
+}
+nav .nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 500px; 
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px; 
+  margin: 0 10px;
+  padding: 5px 10px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+    color: #00d4ff;
+    border-bottom: 2px solid #00d4ff;
+}

@@ -1,0 +1,30 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px"
+}
+.form-row label {
+    width: 120px;
+    font-weight: bold; 
+}
+.form-row input,
+.form-row textarea{
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px; 
+}
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgb(229, 19, 183); font-size: 18px;
+    color: black; font-weight: bold; 
+    border-radius: 6px;
+    cursor: pointer; 
+}

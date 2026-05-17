@@ -1,0 +1,29 @@
+.search-container{
+    display:flex;
+    flex-direction:column;
+    max-width:500px;
+    margin:25px auto;
+    gap:8px;
+}
+
+.search-container label{
+    font-weight:bold;
+    font-size:large;
+    color:#333;
+}
+
+.search-container input{
+    padding:12px 15px;
+    border:1px solid #ccc;
+    border-radius:30px;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+
+}
+.search-container input:focus{
+
+    border-color:black;
+    box-shadow:0 0 8px rgba(0,0,0,.15);
+
+}

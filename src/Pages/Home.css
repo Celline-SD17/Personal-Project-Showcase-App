@@ -1,0 +1,43 @@
+.home {
+    background-color: rgb(228, 224, 224);
+    padding:40px; 
+}
+.hero {
+    text-align:center;
+    padding:40px 20px;
+}
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+    color:rgb(213, 21, 168);
+}
+.hero h4{
+    color:666; 
+    margin-bottom: 25px;
+    font-style:italic;
+}
+.hero p{
+    max-width:700px;
+    margin:15px auto;
+    line-height:1.7;
+    color:#555; 
+}
+.features{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:50px;
+    flex-wrap:wrap;
+}
+.feature-card{
+    width:250px;
+    background:rgb(55, 229, 49);
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s; 
+}
+.feature-card:hover{
+    transform:translateY(-8px);
+}

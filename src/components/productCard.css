@@ -1,0 +1,17 @@
+.product-card button {
+  margin: 5px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-btn {
+    background: #17b8ed;
+    color: white;
+    margin-right: 10px; 
+}
+.delete-btn{
+    background: #dc3545;
+    color: white; 
+}

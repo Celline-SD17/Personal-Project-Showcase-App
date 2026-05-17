@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    margin-top: 10px; 
+}
+.manage-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    background: rgb(66, 10, 236);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.manage-btn:hover {
+    transform: translateY(-2px);
+    background: #f307d3;
+}
+.manage-btn:active{
+    transform:scale(.98);
+}
