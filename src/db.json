@@ -1,0 +1,75 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Nike Air Force 1",
+      "brand": "Nike",
+      "category": "Lifestyle",
+      "price": 2000,
+      "image": "https://as2.ftcdn.net/jpg/04/79/11/23/1000_F_479112366_dku6Ufwd9OVnRB3AZxonMgRzuZYeTTYY.webp",
+      "description": "Classic all-white sneaker with timeless street style.",
+      "stock": 12
+    },
+    {
+      "id": "2",
+      "name": "Adidas Ultraboost 22",
+      "brand": "Adidas",
+      "category": "Running",
+      "price": 3500,
+      "image": "https://i.ebayimg.com/images/g/ybAAAOSwagJlSxZ2/s-l1600.webp",
+      "description": "High-performance running shoe with responsive cushioning.",
+      "stock": 8
+    },
+    {
+      "id": "3",
+      "name": "Puma RS-X",
+      "brand": "Puma",
+      "category": "Casual",
+      "price": 5000,
+      "image": "https://i.ebayimg.com/images/g/c7gAAOSw~UJmS-Zi/s-l1600.webp",
+      "description": "Chunky retro-inspired sneaker with bold design.",
+      "stock": 15
+    },
+    {
+      "id": "4",
+      "name": "New Balance 550",
+      "brand": "New Balance",
+      "category": "Lifestyle",
+      "price": 4500,
+      "image": "https://images-wp.stockx.com/news/wp-content/uploads/2021/11/Guida-Essenziale-NB-550-IT-articleblog-hero-square-1200x1200.png",
+      "description": "Vintage basketball-inspired silhouette.",
+      "stock": 6
+    },
+    {
+      "id": "5",
+      "name": "Jordan 1 Retro High",
+      "brand": "Jordan",
+      "category": "Basketball",
+      "price": 3500,
+      "image": "https://i.ebayimg.com/images/g/k4QAAeSwUUZpe~A7/s-l1600.webp",
+      "description": "Iconic basketball sneaker with premium leather.",
+      "stock": 4
+    },
+    {
+      "id": "6",
+      "name": "Converse Chuck Taylor",
+      "brand": "Converse",
+      "category": "Casual",
+      "price": 2000,
+      "image": "https://thumbs.dreamstime.com/z/converse-chuck-taylor-all-star-brown-high-top-sneakers-wooden-step-outdoors-443502489.jpg?ct=jpeg",
+      "description": "Classic canvas sneaker loved across generations.",
+      "stock": 20
+    },
+    {
+      "name": "J4",
+      "brand": "JORDANS",
+      "category": "LIFESTYLE",
+      "price": "4000",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyu2_aK2EO810dS16xZ8TimypvNE3kYxMHtw&s",
+      "description": "LADIES SHOES",
+      "stock": "",
+      "id": "SU3VQ_COYhQ"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
