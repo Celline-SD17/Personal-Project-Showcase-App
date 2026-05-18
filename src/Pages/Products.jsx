@@ -9,7 +9,7 @@ function Products({ addToCart, message}) {
   const [searchTerm,setSearchTerm] = useState("");
 //Fetching Products
     useEffect(()=>{
-        fetch("http://localhost:3001/products")
+        fetch("https://personal-project-showcase-app-1.onrender.com/products")
         .then(response => {
          if(!response.ok){
             throw new Error("Unable to fetch products!");

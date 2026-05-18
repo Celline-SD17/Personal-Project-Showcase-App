@@ -11,7 +11,7 @@ function Admin(){
     const [showProducts, setShowProducts] = useState(false);
     //Fetching products from dbn.json.
         useEffect(()=>{
-            fetch("http://localhost:3001/products")
+            fetch("https://personal-project-showcase-app-1.onrender.com/products")
             .then(response => {
                 if(!response.ok){
                  throw new Error("Unable to fetch products!");
@@ -28,7 +28,7 @@ function Admin(){
 
     //Adding a new product using POST request
     function addProduct(newProduct){
-        fetch("http://localhost:3001/products",{
+        fetch("https://personal-project-showcase-app-1.onrender.com/products",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -41,7 +41,7 @@ function Admin(){
     }
     //Deleting a product using Delete Request
     function deleteProduct(id){
-        fetch(`http://localhost:3001/products/${id}`,{
+        fetch(`https://personal-project-showcase-app-1.onrender.com/products${id}`,{
             method:"DELETE"
         })
         .then(()=>{
@@ -57,7 +57,7 @@ function Admin(){
 
 
     function updateProduct(updatedProduct){
-        fetch(`http://localhost:3001/products/${updatedProduct.id}`,{
+        fetch(`https://personal-project-showcase-app-1.onrender.com/products${updatedProduct.id}`,{
             method:"PATCH",
             headers:{ "Content-Type": "application/json" },
             body: JSON.stringify(updatedProduct)
