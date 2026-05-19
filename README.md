@@ -50,7 +50,7 @@
 - To get the local host link to the browser, run command: npm run dev.
 
 ## Running Tests
-- To test for functionality run the command npm test.
+- To test for functionality run the command npm test.https://personal-project-showcase-app-9j4s.vercel.app/
 ## Project Functionality
 - The application follows a component-based structure where data flows from parent components to child components through props.
 - Users can interact with sneaker products while administrators have additional permissions for product management including adding new products or deleting products.

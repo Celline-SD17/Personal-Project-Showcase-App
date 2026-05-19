@@ -20,7 +20,7 @@ function ProductForm({ onAdd, editingProduct, onUpdate }) {
     setFormData({...formData, [e.target.name]: e.target.value})
   }
   function handleSubmit(e){
-    e.preventDefault()
+    e.preventDefault();
     if(editingProduct){
       onUpdate(formData)
     }
