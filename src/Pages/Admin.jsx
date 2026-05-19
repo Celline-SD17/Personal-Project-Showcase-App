@@ -41,7 +41,7 @@ function Admin(){
     }
     //Deleting a product using Delete Request
     function deleteProduct(id){
-        fetch(`https://personal-project-showcase-app-1.onrender.com/products${id}`,{
+        fetch(`https://personal-project-showcase-app-1.onrender.com/products/${id}`,{
             method:"DELETE"
         })
         .then(()=>{
